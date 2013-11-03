@@ -217,6 +217,7 @@ if __name__=='__main__':
 		main( "../tmp/tabblock2010_%s_pophu.shp"%state, "../data/people.%s.db"%state )
 
 	if confirm("Next step: .csv conversion, Continue?", True):
+		# error on this line run script manually
 		os.system("bash makecsv.sh")
 
 	if confirm("Next step: sort and merge .csv files, Continue?", True):
